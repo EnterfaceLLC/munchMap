@@ -11,7 +11,7 @@ import { createOpenLink } from "react-native-open-maps";
 import { styles, andriod } from "./styles";
 
 //* PROFILE SCREEN CODE //
-const ProfileScrn = () => {
+const CalendarScrn = () => {
 
   const destination = {
     a: 'Helping Hands Humane Society',
@@ -40,4 +40,4 @@ const ProfileScrn = () => {
   );
 };
 
-export default ProfileScrn;
+export default CalendarScrn;

@@ -8,15 +8,18 @@ const Stack = createStackNavigator();
 
 //* SCREEN IMPORTS //
 import HomeScrn from "../screens/Home/HomeScrn";
+import ProfileScrn from "../screens/Profile/ProfileScrn";
+import CalendarScrn from "../screens/Calendar/Home/CalendarScrn";
 
 //* ROOT NAVIGATION CODE //
 export function Root() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="Home" component={HomeScrn} />
+        <Stack.Screen name="Profile" component={ProfileScrn} />
+        <Stack.Screen name="Calendar" component={CalendarScrn} />
       </Stack.Navigator>
     </NavigationContainer>
   );
-}
+};

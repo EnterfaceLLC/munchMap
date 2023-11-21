@@ -4,13 +4,13 @@ import React from "react";
 //* RN IMPORT //
 import { View, Text, SafeAreaView } from "react-native";
 
-//* HOME LIST COMPONENT //
-const HomeList = () => {
+//* PROFILE LIST COMPONENT //
+const ProfileList = () => {
   return (
     <View>
-      <Text>HomeList</Text>
+      <Text>ProfileList</Text>
     </View>
   );
 };
 
-export default HomeList;
+export default ProfileList;

@@ -1,1 +1,1 @@
-export {default} from './HomeScrn';
+export {default} from './ProfileScrn';

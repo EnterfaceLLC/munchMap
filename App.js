@@ -4,8 +4,8 @@ import React, { useState, useEffect } from "react";
 //* EXPO IMPORT //
 import * as Location from "expo-location";
 
-//* SCREEN IMPORT //
-import HomeScrn from "./src/screens/Home/HomeScrn";
+//* ROOT IMPORT //
+import { Root } from "./src/utils/Root";
 
 //* APP ENTRY //
 export default function App() {
@@ -47,6 +47,6 @@ export default function App() {
 
 
   return (
-    <HomeScrn />
+    <Root />
   );
 };
