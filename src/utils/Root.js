@@ -9,7 +9,7 @@ const Stack = createStackNavigator();
 //* SCREEN IMPORTS //
 import HomeScrn from "../screens/Home/HomeScrn";
 import ProfileScrn from "../screens/Profile/ProfileScrn";
-import CalendarScrn from "../screens/Calendar/Home/CalendarScrn";
+import CalendarScrn from "../screens/Calendar/CalendarScrn";
 
 //* ROOT NAVIGATION CODE //
 export function Root() {

@@ -4,8 +4,8 @@ import React from "react";
 //* RN IMPORT //
 import { View, Text, Button, SafeAreaView } from "react-native";
 
-//* RN OPEN MAPS IMPORT //
-import { createOpenLink } from "react-native-open-maps";
+//* RN NAVIGATION IMPORT //
+import { useNavigation } from "@react-navigation/native";
 
 //* STYLES IMPORT //
 import { styles, andriod } from "./styles";
@@ -13,28 +13,19 @@ import { styles, andriod } from "./styles";
 //* PROFILE SCREEN CODE //
 const ProfileScrn = () => {
 
-  const destination = {
-    a: 'Helping Hands Humane Society',
-    b: 'Evergy Plaza',
-    c: 'Mommy & Me',
-    d: 'Jacs Liquor',
-    e: 'The Wheel Barrel',
+    const navigation = useNavigation();
+
+  const calendarHndlr = () => {
+    navigation.navigate("Calendar");
   };
-
-  const openRoute = createOpenLink({
-    zoom: 15,
-    provider: "google",
-    end: destination.c,
-  });
-
 
   return (
     <SafeAreaView style={[styles.mainContnr, andriod ]}>
       <Text>Home Screen</Text>
             <Button
         color={"#bdc3c7"}
-        onPress={openRoute}
-        title="Click To Open Google Maps 🗺"
+        onPress={calendarHndlr}
+        title="Click To Open Calendar Events"
       />
     </SafeAreaView>
   );
